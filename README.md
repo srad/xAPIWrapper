@@ -1,3 +1,5 @@
+Build-Status: [![Build Status](https://travis-ci.org/srad/xAPIWrapper.svg?branch=amd)](https://travis-ci.org/srad/xAPIWrapper)
+
 ## Fork
 * xapi refatored fork for AMD usage and proper JS coding style:
 * Native requirejs support.
