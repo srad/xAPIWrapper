@@ -1,3 +1,13 @@
+## Fork
+* xapi refatored fork for AMD usage and proper JS coding style:
+* Native requirejs support.
+* Moves all Objects into separate Modules.
+* Fixes globally leaked variables.
+* Jslint compliant (not a lot missing).
+* Better function signatures (when finished).
+* usage of bower
+* finally compilation and optimization with r.js 
+
 xAPIWrapper
 ===========
 

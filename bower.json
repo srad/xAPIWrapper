@@ -1,0 +1,26 @@
+{
+    "name": "xAPIWrapper AMD",
+    "description": "xapi refatored fork for AMD usage and proper JS coding style.",
+    "main": "",
+    "authors": [
+        "srad <saman@posteo.de>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "xapi"
+    ],
+    "homepage": "https://github.com/srad/xAPIWrapper",
+    "moduleType": [
+        "amd"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "cryptojslib": "*"
+    }
+}
