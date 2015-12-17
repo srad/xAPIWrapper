@@ -1,8 +1,10 @@
 define([
     'xapi/system/date',
     'xapi/system/coding',
-    'xapi/system/logger'
-], function (Date, coding, logger) {
+    'xapi/system/logger',
+    'cryptojs.base64',
+    'cryptojs.sha1'
+], function (Date, coding, logger, CryptoJS) {
     'use strict';
 
     // TODO: Module is pretty messy, the generation of data structure is no separated from the regular code and therefore not really testable
@@ -225,7 +227,7 @@ define([
                 return null;
             }
             try {
-                return toSHA1(tohash);
+                return CryptoJS.SHA1(tohash);
             }
             catch (e) {
                 logger.log("Error trying to hash -- " + e);
@@ -257,7 +259,7 @@ define([
      * @returns {*}
      */
     XAPIWrapper.prototype.updateAuth = function (obj, username, password) {
-        obj.auth = "Basic " + coding.encodeBase64(username + ":" + password);
+        obj.auth = "Basic " + CryptoJS.Base64(username + ":" + password);
         return obj;
     };
 
